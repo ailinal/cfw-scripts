@@ -102,4 +102,11 @@ rules:
   - RULE-SET,telegramcidr,🔰 PROXY
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
+  - PROCESS-NAME,steam.exe,DIRECT
+  - PROCESS-NAME,Agent.exe,DIRECT
+  - PROCESS-NAME,Hearthstone.exe,DIRECT
+  - PROCESS-NAME,OneDrive.exe,DIRECT
+  - PROCESS-NAME,DownloadSDKServer.exe,DIRECT
+  - PROCESS-NAME,RadeonSoftware.exe,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
   - MATCH,🔰 PROXY
