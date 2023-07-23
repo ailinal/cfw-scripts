@@ -87,6 +87,14 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 86400
 rules:
+  - PROCESS-NAME,Agent.exe,DIRECT
+  - PROCESS-NAME,Hearthstone.exe,DIRECT
+  - PROCESS-NAME,OneDrive.exe,DIRECT
+  - PROCESS-NAME,DownloadSDKServer.exe,DIRECT
+  - PROCESS-NAME,RadeonSoftware.exe,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steamserver.net,DIRECT
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
@@ -102,11 +110,7 @@ rules:
   - RULE-SET,telegramcidr,🔰 PROXY
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - PROCESS-NAME,steam.exe,DIRECT
-  - PROCESS-NAME,Agent.exe,DIRECT
-  - PROCESS-NAME,Hearthstone.exe,DIRECT
-  - PROCESS-NAME,OneDrive.exe,DIRECT
-  - PROCESS-NAME,DownloadSDKServer.exe,DIRECT
-  - PROCESS-NAME,RadeonSoftware.exe,DIRECT
-  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
   - MATCH,🔰 PROXY
+  # - PROCESS-NAME,steam.exe,DIRECT
+  # - PROCESS-NAME,steamservice.exe,🔰 PROXY
+  # - PROCESS-NAME,steamwebhelper.exe,🔰 PROXY
